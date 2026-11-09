@@ -17,7 +17,7 @@
         "sizes": {
           "xs": {
             "list_price": 95,
-            "discount": null,
+            "discount": 1,
             "discount_percentage": 20,
             "sale_price": 76,
             "stock": 415
@@ -53,6 +53,7 @@
         }
       },
       "brown": {
+        "sizes": {
           "xs": {
             "list_price": 95,
             "discount": null,
@@ -88,6 +89,7 @@
             "sale_price": 76,
             "stock": 435
           }
+        }
       }    
     },
     "features": {

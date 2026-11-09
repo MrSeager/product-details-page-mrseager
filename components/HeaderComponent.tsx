@@ -11,7 +11,7 @@ export default function HeaderComponent() {
     const [openMenu, setOpenMenu] = useState<boolean>(false);
 
     return(
-        <header className="bg-[#f9fafc] w-full">
+        <header className="w-full">
             <div className="relative mx-auto max-w-[120rem] w-full flex items-center justify-start gap-25 py-7 px-5 lg:px-15">
                 <Image 
                     src={'/images/Screenshot 2026-10-27 111349.png'}
