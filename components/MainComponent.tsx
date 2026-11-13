@@ -1,6 +1,8 @@
 'use client';
 //Components
 import { useState } from "react";
+import Link from "next/link";
+import RatingStar from "./RatingStar";
 //Data
 import productDataJson from "@/src/data/productData.json";
 
@@ -36,12 +38,46 @@ export default function MainComponent({ productData }: MainComponentProps) {
                             {productData[0].color[itemColor].sizes[itemSize].discount_percentage}% OFF
                         </div>
                     }
-                    <div>
-                        rating
+                    <div className="flex gap-3 items-center">
+                        <h2 className="text-[30px] font-semibold text-black/75">{productData[0].rating}</h2>
+                        <div className="flex gap-1">
+                            <RatingStar 
+                                starNumb={1}
+                                rating={productData[0].rating}
+                            />
+                            <RatingStar 
+                                starNumb={2}
+                                rating={productData[0].rating}
+                            />
+                            <RatingStar 
+                                starNumb={3}
+                                rating={productData[0].rating}
+                            />
+                            <RatingStar 
+                                starNumb={4}
+                                rating={productData[0].rating}
+                            />
+                            <RatingStar 
+                                starNumb={5}
+                                rating={productData[0].rating}
+                            />
+                        </div>
+                        {productData[0].reviewsAmount !== 0 ?
+                            <Link
+                                href={'/'}
+                                className="duration-300 text-indigo-700 hover:scale-105"
+                            >
+                                {productData[0].reviewsAmount < 2 ? 'See 1 review' : `See all ${productData[0].reviewsAmount} reviews`}
+                            </Link>
+                            : ''
+                        }                       
                     </div>
                     <p>{productData[0].description_0}</p>
-                    <div>
-
+                    <div className="flex flex-col gap-3">
+                        <h2 className="text-sm">Available Colors</h2>
+                        <div>
+                            
+                        </div>
                     </div>
                 </div>
             </div>
