@@ -24,21 +24,21 @@
             "sale_price": 76,
             "stock": 415
           },
-          "sm": {
+          "s": {
             "list_price": 95,
             "discount": null,
             "discount_percentage": 20,
             "sale_price": 76,
             "stock": 420
           },
-          "md": {
+          "m": {
             "list_price": 95,
             "discount": null,
             "discount_percentage": 20,
             "sale_price": 76,
             "stock": 425
           },
-          "lg": {
+          "l": {
             "list_price": 95,
             "discount": null,
             "discount_percentage": 20,
@@ -63,21 +63,21 @@
             "sale_price": 76,
             "stock": 415
           },
-          "sm": {
+          "s": {
             "list_price": 95,
             "discount": null,
             "discount_percentage": 20,
             "sale_price": 76,
             "stock": 420
           },
-          "md": {
+          "m": {
             "list_price": 95,
             "discount": null,
             "discount_percentage": 20,
             "sale_price": 76,
             "stock": 425
           },
-          "lg": {
+          "l": {
             "list_price": 95,
             "discount": null,
             "discount_percentage": 20,
